@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: f3f5f9;
+    color: #333;
+
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+
+}
+.sidebar{
+    width: 230px;
+    background-color: #2c4365;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255,255,255.0.1);
+}
+.logo-img{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+
+}
+.logo h2{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.nav-links{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+.nav-links a, .logout a{
+    text-decoration: none;
+    color: #d1d9e6;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.nav-icon{
+    width:18px;
+    height: 18px;
+    object-fit: contain;
+
+}
+.nav-links a:hover, .nav-links a.active{
+    background-color: #3b5984;
+    color:white;
+}
+.logout{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+
+}
+.main-content{
+    flex: 1;
+    padding: 25px 30px;
+
+}
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.top-bar h1{
+    font-size: 22px;
+    color: #1f2d3d;
+
+}
+.user-info{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+}
+.bell-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.profile-badge{
+    background: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid #e0e6ed;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.avatar-img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.welcome-banner{
+    background-color: #e6eef8;
+    border-radius: 10px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.welcome-text h2{
+    font-size: 20px;
+    color: #1f2d3d;
+    margin-bottom: 6px;
+
+}
+.welcome-text p{
+    font-size: 14px;
+    color: #5a6a85;
+
+}
+.banner-img{
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+
+}
+.stats-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+
+}
+.stats-card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #e6ebf1;
+
+}
+.stat-icon{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+.stat-card h3{
+    font-size: 22px;
+    color: #1f2d3d;
+}
+.stat-card p{
+    font-size: 13px;
+    color: #778599;
+    margin-top: 4px;
+}
+.bottom-grid{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 20px;
+}
+.panel{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e6ebf1;
+
+}
+.panel h3{
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: #1f2d3d;
+}
+.course-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1pxsolid #f0f2f5;
+}
+.course-item:last-child{
+    border-bottom: none;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.course-icon{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+.course-info h4{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.course-info small{
+    color: #778599;
+    font-size: 12px;
+}
+.progress-wrap{
+    text-align: right;
+    width: 90px;
+}
+.progress-bar{
+    width: 100%;
+    height: 6px;
+    background-color: #e6ebf1;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+.progress-bar .fill{
+    height: 100%;
+    background-color: #3b7ddd;
+}
+.progress-wrap small{
+    font-size: 11px;
+    color: #5a6a85;
+}
+.assignment-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+    border-bottom: 1px solid #f0f2f5;
+}
+.assignment-item h4{
+    font-size: 14px;
+    margin-bottom: 3px;
+
+}
+.assignment-item small{
+    font-size: 12px;
+    color: #778599;
+}
+.badge{
+    background-color: fff3e6;
+    color: #d97724;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
